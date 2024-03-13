@@ -1,4 +1,5 @@
 import { Button } from '@/components/ui/button'
+import Link from 'next/link'
 import React from 'react'
 
 const Contactall = () => {
@@ -16,7 +17,8 @@ const Contactall = () => {
                             </h3>
                         </div>
                         <div className='flex justify-center md:justify-end items-center'>
-                            <Button className='h-16 w-60 bg-based text-2xl'> Contact Us</Button>
+                            <Link href={'/contact'}>
+                            <Button className='h-16 w-60 bg-based1 rounded-3xl text-2xl'> Contact Us</Button></Link>
                         </div>
                     </div>
 

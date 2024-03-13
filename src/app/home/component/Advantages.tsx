@@ -53,7 +53,7 @@ const Advantages = () => {
                                 <p>Integrated Hospital Information Systems</p>
                             </CardContent>
                             <CardFooter>
-                                <p>The company values collaboration, continuous improvement, and a customer-centric approach in delivering high-quality solutions to its clients.</p>
+                                <p className='text-sm'>The company values collaboration, continuous improvement, and a customer-centric approach in delivering high-quality solutions to its clients.</p>
                             </CardFooter>
                         </Card>
                         <Card className='m-5 flex flex-col justify-center text-justify'>
@@ -66,7 +66,7 @@ const Advantages = () => {
                                 <p>Integrated Hospital Information Systems</p>
                             </CardContent>
                             <CardFooter>
-                                <p>The company values collaboration, continuous improvement, and a customer-centric approach in delivering high-quality solutions to its clients.</p>
+                                <p className='text-sm'>The company values collaboration, continuous improvement, and a customer-centric approach in delivering high-quality solutions to its clients.</p>
                             </CardFooter>
                         </Card>
                     </div>
@@ -83,8 +83,9 @@ const Advantages = () => {
                                         <p>{data.title}</p>
                                     </CardContent>
                                     <CardFooter>
-                                        <p>{data.description}</p>
+                                        <p className='text-sm'>{data.description}</p>
                                     </CardFooter>
+
                                 </Card>
                             )
                         })}

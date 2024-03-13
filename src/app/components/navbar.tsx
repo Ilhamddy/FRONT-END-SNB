@@ -21,9 +21,10 @@ import { navigationMenuTriggerStyle } from "@/components/ui/navigation-menu";
 import { dataNav } from "@/hooks/dataNavbar";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { FaAmazon, FaApple, FaAws, FaBarsStaggered, FaBrain } from "react-icons/fa6";
+import { FaAmazon, FaApple, FaAws, FaBarsStaggered, FaBrain, FaHospital } from "react-icons/fa6";
 import { IoMdClose } from "react-icons/io";
 import Link from "next/link";
+import { FaClinicMedical } from "react-icons/fa";
 
 const Navbarsection = () => {
 
@@ -55,6 +56,10 @@ const Navbarsection = () => {
         // textShadow: scrollPosisition > 0 ? "1px 1px 2px #ffffff" : "1px 1px 2px #000000",
     };
 
+    const logoStyle = {
+        src: scrollPosisition > 0 ? "/image/logoSNB.png" : "/image/logoSNB1putih.png",
+    }
+
 
     const [open, setOpen] = useState(false);
     const [navbar, setNavbar] = useState(false);
@@ -75,7 +80,7 @@ const Navbarsection = () => {
                     <div className="flex justify-between  gap-5 md:w-full sm:w-full">
                         <div className="flex items-center md:w-[200px] sm:w-[200px]">
                             <Link href='/'>
-                                <Image src={'/image/logoSNB.png'} height={200} width={200} alt="logo PT. SOLUSI NUSANTARA BERDIKARI" />
+                                <Image src={scrollPosisition > 0 ? "/image/logoSNB1putih.png" : "/image/logoSNB.png"} height={200} width={200} alt="logo PT. SOLUSI NUSANTARA BERDIKARI" />
                             </Link>
                         </div>
                         <div className="flex gap-2">
@@ -121,7 +126,7 @@ const Navbarsection = () => {
                                             >
                                                 {data.list ? (
                                                     <>
-                                                        <NavigationMenuTrigger className="text-sm rounded-md bg-transparent hover:bg-transparent px-5 py-2 dark:bg-black" >
+                                                        <NavigationMenuTrigger className="text-sm rounded-md bg-transparent hover:bg-transparent px-5 py-2 dark:bg-transparent" >
                                                             {data.title}
                                                         </NavigationMenuTrigger>
                                                         <NavigationMenuContent className="w-full bg-transparent hover:bg-transparent ">
@@ -130,9 +135,9 @@ const Navbarsection = () => {
                                                                     <NavigationMenuLink asChild>
                                                                         <a
                                                                             className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                                                                            href="/"
+                                                                            href="/product"
                                                                         >
-                                                                            <FaBrain className="h-6 w-6" />
+                                                                            <FaBrain className="h-6 w-6 text-based1" />
                                                                             <div className="mb-2 mt-4 text-lg font-medium">
                                                                                 All Product
                                                                             </div>
@@ -142,25 +147,25 @@ const Navbarsection = () => {
                                                                         </a>
                                                                     </NavigationMenuLink>
                                                                 </li>
-                                                                <li className="rounded-md bg-gradient-to-b from-muted/50 to-muted p-1 no-underline outline-none focus:shadow-md" title="Introduction">
-                                                                    <FaAmazon className="h-5 w-5" />
-                                                                    SIMRS (Sistem Informasi Manajemen Rumah Sakit)
-                                                                </li>
-                                                                <li className=' rounded-md bg-gradient-to-b from-muted/50 to-muted p-1 no-underline outline-none focus:shadow-md' title="Installation">
-                                                                    <FaAws className="h-5 w-5" />
-                                                                    E-Klinik
-                                                                </li>
-                                                                <li className=" rounded-md bg-gradient-to-b from-muted/50 to-muted p-1 no-underline outline-none focus:shadow-md" title="Typography">
-                                                                    <FaApple className="h-5 w-5" />
+                                                                <a href="/product-detail">
+                                                                    <li className="rounded-md bg-gradient-to-b from-muted/50 h-24  to-muted p-4 no-underline outline-none focus:shadow-md" title="Introduction">
+                                                                        <FaHospital className="h-6 w-6 text-based1 " />
+                                                                        SIMRS (Sistem Informasi Manajemen Rumah Sakit)
+                                                                    </li>
 
-                                                                    E-Puskesmas
-                                                                </li>
+                                                                </a>
+                                                                <a href="/product-detail-klinik">
+                                                                    <li className=' rounded-md bg-gradient-to-b from-muted/50 h-24 to-muted p-4 no-underline outline-none focus:shadow-md' title="Installation">
+                                                                        <FaClinicMedical className="h-6 w-6  text-based1" />
+                                                                        E-Klinik
+                                                                    </li>
+                                                                </a>
                                                             </ul>
                                                         </NavigationMenuContent>
                                                     </>
                                                 ) : (
                                                     <>
-                                                        <NavigationMenuLink asChild className={`${navigationMenuTriggerStyle()} text-md rounded-md bg-transparent hover:bg-transparent px-5 py-2 dark:bg-black`}>
+                                                        <NavigationMenuLink asChild className={`${navigationMenuTriggerStyle()} text-md rounded-md bg-transparent hover:bg-transparent px-5 py-2 dark:bg-transparent`}>
                                                             <div >
                                                                 <a href={data.link}>
                                                                     <div>{data.title}</div>

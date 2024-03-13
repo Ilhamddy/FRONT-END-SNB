@@ -52,12 +52,12 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        Darker1: "#c9a612",
-        Darker2: "#987f10",
-        Darker3: "#67590e",
-        based: "#fac814ff",
+
+        based1: "#FAA300",
+        based: "#ffc500cc",
         second: "#F5F7F8",
         third: "#F6F1E9",
+        // darker: "#2F4858",
       },
       backgroundImage: {
         "hero-pattern":
@@ -68,16 +68,30 @@ const config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        produk: "url('/icon/app.png')",
+        produk2: "url('/icon/app1.png')",
+
         myimage: "url('/image/bg.png')",
         myimage2: "url('/image/bg2.png')",
-        product1: "url('/image/bg3.png')",
-        product2: "url('/image/bg4.png')",
+        product1: "url('/image/product.png')",
+        product2: "url('/image/product2.png')",
         myimage3: "url('/image/image4.jpg')",
         myimage5: "url('/image/4.jpg')",
         myimage6: "url('/image/3.jpg')",
         myimage4: "url('/image/bgbg.png')",
-        about: "url('/image/background3.jpg')",
-        product: "url('/background/background5.jpg')",
+        about3: "url('/image/photo.jpg')",
+        about4:
+          " linear-gradient(to top, #000000, rgba(255, 197, 0, 0.0)), url('/image/app.jpg')",
+        darker: "linear-gradient(to bottom, #000000, rgba(255, 197, 0, 0.0))",
+        about2: "url('/image/bgabout3.jpg')",
+
+        about:
+          " linear-gradient(to top, #000000, rgba(255, 197, 0, 0.0)), url('/image/bgabout.jpg')",
+        aboutpro:
+          " linear-gradient(to top, #000000, rgba(255, 197, 0, 0.0)), url('/image/aboutpro.jpg')",
+        product:
+          "linear-gradient(to top, #000000, rgba(255, 197, 0, 0.0)), url('/image/ProductPro.jpg')",
+        news: "linear-gradient(to top, #000000, rgba(255, 197, 0, 0.0)), url('/image/news.jpg')",
       },
       borderRadius: {
         lg: "var(--radius)",
