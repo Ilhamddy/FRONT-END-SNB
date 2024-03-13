@@ -6,8 +6,6 @@ function App() {
     AOS.init();
     AOS.refresh();
   }, []);
-  return (
-    // your components
-  );
+
 }
 export default App;

@@ -20,12 +20,8 @@ import { Textarea } from "@/components/ui/textarea";
 import { useFormik } from "formik";
 
 
-interface IEdit {
-  data: INews,
-  refreshNews: () => void,
-}
 
-const ButtonEdit = ({ data, refreshNews }: { data: INews, refreshNews: () => void }) => {
+const ButtonEdit = ({ data }: { data: INews }) => {
   console.log("title", data.id);
 
   const formik = useFormik({

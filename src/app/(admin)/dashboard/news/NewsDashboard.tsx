@@ -34,12 +34,12 @@ interface INewsDelete {
 
 const NewsDashboard = () => {
   const news = useNews();
-  const refreshNews = useNews(); 
+
 
 
   return (
     <div className="flex flex-col">
-      <Toaster/>
+      <Toaster />
       <header className="flex h-14 items-center gap-4 border-b bg-gray-100/40 px-6 dark:bg-gray-800/40 lg:h-[60px]">
         <Link className="lg:hidden" href="#">
           <BoxIcon className="h-6 w-6" />
@@ -55,7 +55,7 @@ const NewsDashboard = () => {
               size="icon"
               variant="ghost"
             >
-              <FaUser/>
+              <FaUser />
               <span className="sr-only">Toggle user menu</span>
             </Button>
           </DropdownMenuTrigger>
@@ -73,9 +73,9 @@ const NewsDashboard = () => {
         <div className="flex items-center justify-between">
           <h1 className="text-lg font-semibold md:text-2xl">Users</h1>
           <Link href={'/dashboard/create-news'}>
-          <Button className="ml-auto" size="sm">
-            Add News
-          </Button>
+            <Button className="ml-auto" size="sm">
+              Add News
+            </Button>
           </Link>
         </div>
         <div className="rounded-lg border shadow-sm">
@@ -93,7 +93,7 @@ const NewsDashboard = () => {
                 <TableBody key={index}>
                   <TableRow>
                     <TableCell>
-                    {data.id}
+                      {data.id}
                     </TableCell>
                     <TableCell className="font-medium md:w-[250px]">
                       {data.title}
@@ -102,9 +102,9 @@ const NewsDashboard = () => {
                     {/* <TableCell>{data.category}</TableCell> */}
                     <TableCell className="text-right">
                       <div className="my-2">
-                        <ButtonEdit data={data} refreshNews={refreshNews} />
-                     </div>
-                      <ButtonDelete data={data}/>
+                        <ButtonEdit data={data} />
+                      </div>
+                      <ButtonDelete data={data} />
                     </TableCell>
                   </TableRow>
                 </TableBody>
@@ -113,7 +113,7 @@ const NewsDashboard = () => {
           </Table>
         </div>
       </main>
-    </div> 
+    </div>
   )
 }
 
