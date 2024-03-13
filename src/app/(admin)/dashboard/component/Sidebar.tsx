@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 import { BellIcon, BoxIcon, HomeIcon } from "@radix-ui/react-icons";
-import { FaQuestion, FaServicestack, FaUser } from "react-icons/fa6";
+import { FaChartBar, FaQuestion, FaServicestack, FaUser } from "react-icons/fa6";
 const Sidebar = () => {
 
   const [focusedLink, setFocusedLink] = useState(false);
@@ -28,6 +28,12 @@ const Sidebar = () => {
     link: "/dashboard/faq",
     title: "FAQ",
     icon: FaQuestion
+
+  },
+  {
+    link: "/dashboard/statistic",
+    title: "Statistic",
+    icon: FaChartBar
 
   },]
 
