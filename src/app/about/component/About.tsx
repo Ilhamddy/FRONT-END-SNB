@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 
 
 const About = () => {
-   
+
     return (
         <section className='bg-aboutpro bg-cover bg-center'>
             <div className='h-screen bg-cover md:mx-10 sm:mx-10 mx-3 py-10'>
@@ -18,7 +18,7 @@ const About = () => {
                             <div className='text-6xl my-5  md:text-8xl font-black text-center md:text-start space-y-28 mb-5'>
                                 {/* <h1>PT. Solusi <span className='text-based'>Nusantara</span> Berdikari</h1> */}
                                 <div>
-                                    <h1>Innovative <span className='text-based'>solutions</span> </h1>
+                                    <h1>Solusi <span className='text-based'>Innovative</span> </h1>
                                     <h1>in the healthcare.</h1>
                                     {/* {news.map((data, index) => {
                                         return (

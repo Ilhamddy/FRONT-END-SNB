@@ -21,11 +21,11 @@ const Overview = () => {
                             <p></p>
                             <div className="text-justify ">
                                 <h5>
-                                    PT Solusi Nusantara Berdikari is dedicated to empowering
-                                    healthcare institutions with advanced.
+                                    PT Solusi Nusantara Berdikari berdedikasi untuk memberdayakan institusi kesehatan yang maju.
+
                                 </h5>
                                 <h5 className='my-5'>
-                                    Our application seamlessly integrates various hospital functions, including patient management, electronic health records (EHR), billing and invoicing, inventory management, and more. This integration ensures smooth communication and coordination across different departments.
+                                    Aplikasi kami mengintegrasikan berbagai fungsi rumah sakit dengan lancar, termasuk manajemen pasien, catatan kesehatan elektronik (EHR), penagihan dan faktur, manajemen inventaris, dan banyak lagi. Integrasi ini memastikan komunikasi dan koordinasi yang lancar di berbagai departemen.
                                 </h5>
                             </div>
                             <div className='my-5 py-5 rounded-lg'>
@@ -33,18 +33,14 @@ const Overview = () => {
                                     <AccordionItem value="item-1">
                                         <AccordionTrigger >Vision PT. Solusi Nusantara Berdikari</AccordionTrigger>
                                         <AccordionContent className='bg-third p-5 rounded-lg'>
-                                            The vision of PT Solusi Nusantara Berdikari is to be a
-                                            trusted partner and a driving force in transforming the
-                                            healthcare landscape through technology, innovation, and
-                                            excellence.
+                                            Visi PT Solusi Nusantara Berdikari adalah menjadi mitra tepercaya dan kekuatan pendorong dalam mengubah lanskap layanan kesehatan melalui teknologi, inovasi, dan keunggulan.
                                         </AccordionContent>
                                     </AccordionItem>
                                     <AccordionItem value="item-2">
                                         <AccordionTrigger>Mision PT. Solusi Nusantara Berdikari</AccordionTrigger>
 
                                         <AccordionContent className='bg-third p-5 rounded-lg'>
-
-                                            The mission of PT Solusi Nusantara Berdikari is to revolutionize the healthcare industry by offering cutting-edge solutions that enhance patient care, streamline operations, and improve overall efficiency in healthcare institutions.
+                                            Misi PT Solusi Nusantara Berdikari adalah merevolusi industri perawatan kesehatan dengan menawarkan solusi mutakhir yang meningkatkan perawatan pasien, merampingkan operasi, dan meningkatkan efisiensi secara keseluruhan di institusi perawatan kesehatan.
                                         </AccordionContent>
                                     </AccordionItem>
                                     {/* <AccordionItem value="item-3">

@@ -52,12 +52,11 @@ const Question = () => {
                             </h2>
                             <h3 className='text-sm text-justify'>
                                 <p className='my-5'>
-                                    PT Solusi Nusantara Berdikari is a pioneering leader in providing cutting-edge healthcare solutions tailored to elevate healthcare institutions across Indonesia. With a steadfast commitment to innovation, excellence, and customer satisfaction, we empower hospitals, clinics, and medical practices with comprehensive software solutions designed to streamline operations, enhance patient care, and drive efficiency.
-
+                                    PT Solusi Nusantara Berdikari adalah pelopor dalam menyediakan solusi perawatan kesehatan mutakhir yang dirancang untuk meningkatkan institusi perawatan kesehatan di seluruh Indonesia. Dengan komitmen yang teguh terhadap inovasi, keunggulan, dan kepuasan pelanggan, kami memberdayakan rumah sakit, klinik, dan praktik medis dengan solusi perangkat lunak komprehensif yang dirancang untuk merampingkan operasi, meningkatkan perawatan pasien, dan mendorong efisiensi.
                                 </p>
 
                                 <p>
-                                    For more detailed inquiries or specific questions not covered in our FAQ, feel free to reach out to our support team. We're here to assist you with any concerns or additional information you may need. Contact us through our official channels or visit our Contact Us page for more options.
+                                    Untuk pertanyaan yang lebih rinci atau pertanyaan spesifik yang tidak tercakup dalam FAQ kami, jangan ragu untuk menghubungi tim dukungan kami. Kami siap membantu Anda dengan masalah atau informasi tambahan yang Anda perlukan. Hubungi kami melalui saluran resmi kami atau kunjungi halaman Hubungi Kami untuk opsi lainnya.
                                 </p>
 
                             </h3>

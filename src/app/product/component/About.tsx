@@ -24,18 +24,28 @@ const About = () => {
                 <div className='md:mx-10 sm:mx-10 md:py-24'>
                     <div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 md:py-10 gap-10'>
                         <div className='flex flex-col justify-center mx-2'>
-                            <div className='text-3xl md:text-5xl font-black text-center md:text-start '>
-                                <h1><span className='text-based1'>Unlock Propedrity</span>, Choose Expert Guidance Work with PT. Solusi Nusantara Berdikari</h1>
+                            <div className='text-2xl md:text-3xl font-black text-center md:text-start '>
+                                <h1><span className='text-based1'>Dengan berbagai layanan yang disediakan, </span>PT Solusi Nusantara Berdikari bertujuan untuk menjadi mitra terpercaya</h1>
                             </div>
                         </div>
+
+
+
+
+
+
+
                         <div className='flex flex-col justify-center mx-2 md:px-5'>
                             <div className='text-justify my-5'>
-                                <h5>We are dedicated to revolutionizing the healthcare industry Our platform is designed to streamline hospital operations, enhance patient care, and optimize overall efficiency within healthcare institutions.</h5>
+                                <h5>Kami berdedikasi untuk merevolusi industri perawatan kesehatan. Platform kami dirancang untuk merampingkan operasi rumah sakit, meningkatkan perawatan pasien, dan mengoptimalkan efisiensi secara keseluruhan di dalam institusi perawatan kesehatan.</h5>
                             </div>
                             <div className='flex flex-row gap-5 my-5'>
                                 {/* <Button className='h-16 w-[200px] sm:text-sm  md:text-md gap-5 bg-based1'><FaEject /> Learn More</Button> */}
-                                <Button className='h-12  rounded-full sm:text-sm md:text-md gap-5'> <FaThList /> See Our Product</Button>
-                            </div>
+                                <a href="#product">
+
+                                    <Button className='h-12  rounded-full sm:text-sm md:text-md gap-5'> <FaThList /> See Our Product</Button>
+
+                                </a>                            </div>
                         </div>
                     </div>
                     <div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 md:py-10 md:h-64 gap-5'>

@@ -11,36 +11,36 @@ const About = () => {
         {
             data: '120',
             client: 'Lorem Ipsum',
-            value: 'Integrate system in hospital',
-            title: 'SIMRS sets the standard for patient management, offering seamless integration of registration, admission, and discharge processes, ensuring unparalleled efficiency and patient satisfaction.',
+            value: 'SIMRS',
+            title: 'SIMRS (Sistem Informasi Manajemen Rumah Sakit) menetapkan standar untuk manajemen pasien, menawarkan integrasi yang mulus dari proses registrasi, penerimaan, dan proses penutupan, memastikan efisiensi tak tertandingi dan kepuasan pasien.',
             icon: FaHospital
         },
         {
             data: '90',
             client: 'Lorem Ipsum',
             value: 'Electronic Medical Records',
-            title: 'Our Electronic Medical Records system revolutionizes patient information management, ensuring secure, easy access to patient histories, treatment plans, and medical documents.',
+            title: 'Rekam Medis Elektronik kami merevolusi manajemen informasi pasien, memastikan akses yang aman dan mudah ke riwayat pasien, rencana pengobatan, dan dokumen medis.',
             icon: FaFileMedical
         },
         {
             data: '150',
             client: 'Lorem Ipsum',
             value: 'Appointment Scheduling',
-            title: 'Streamline your appointment scheduling integarte symtem process with our intuitive platform, designed to reduce wait times, improve patient satisfaction, and optimize your staff’s workload.',
+            "title": "Penjadwalan Janji kami dirancang untuk menyederhanakan proses penjadwalan janji dengan platform intuitif, yang dirancang untuk mengurangi waktu tunggu, meningkatkan kepuasan pasien, dan mengoptimalkan beban kerja staf Anda.",
             icon: FaCalendarCheck
         },
         {
             data: '90',
             client: 'Lorem Ipsum',
             value: 'Pharmacy Management',
-            title: 'Our Pharmacy Management system simplifies medication dispensing, inventory control, and prescription management, ensuring accuracy and efficiency in your pharmacy operations.',
+            title: "Manajemen Apotek kami menyederhanakan pengelolaan dispensasi obat, kontrol inventaris, dan manajemen resep, memastikan akurasi dan efisiensi dalam operasi apotek Anda.",
             icon: FaPills
         },
         {
             data: '150',
             client: 'Lorem Ipsum',
             value: 'Billing and Invoicing',
-            title: 'Automate your billing and invoicing processes with our comprehensive solution, designed to streamline financial operations, reduce errors, and improve revenue cycle management.',
+            title: "Penagihan dan Penagihan kami dirancang untuk mengotomatisasi proses penagihan dan penagihan dengan solusi komprehensif, yang dirancang untuk menyederhanakan operasi keuangan, mengurangi kesalahan, dan meningkatkan manajemen siklus pendapatan.",
             icon: FaFileInvoiceDollar
         },
         {
@@ -48,7 +48,7 @@ const About = () => {
             client: 'Lorem Ipsum',
 
             value: 'Laboratory Information System',
-            title: 'Enhance your laboratory’s efficiency with our Laboratory Information System, offering seamless test order management, result entry, and compliance with regulatory standards.',
+            title: "Sistem Informasi Laboratorium kami meningkatkan efisiensi laboratorium Anda dengan menawarkan manajemen pesanan tes yang mulus, entri hasil, dan kepatuhan dengan standar regulasi.",
             icon: FaVials
         }
 
@@ -71,13 +71,13 @@ const About = () => {
                         </div>
                         <div className='flex flex-col justify-center mx-2 md:px-5'>
                             <div className='text-justify my-5'>
-                                <h5>We are dedicated to revolutionizing the healthcare industry Our platform is designed to streamline hospital operations, enhance patient care, and optimize overall efficiency within healthcare institutions.</h5>
+                                <h5>Komitmen kami terhadap pengembangan solusi IT yang terdepan dalam industri kesehatan merupakan inti dari identitas kami. Dengan keahlian yang luas dan pengalaman yang mendalam, kami mampu menyajikan solusi yang efektif dan efisien bagi lembaga kesehatan dan organisasi terkait.</h5>
                             </div>
                             <div className='flex justify-center md:justify-start flex-row gap-5 my-5'>
                                 {/* <Button className='h-16 w-[200px] sm:text-sm  md:text-md gap-5 bg-based1'><FaEject /> Learn More</Button> */}
 
                                 <Link href='/about'>
-                                <Button className='h-12 w-[200px]  bg-based1 rounded-full sm:text-sm md:text-md gap-5'> <FaThList /> About Us</Button>
+                                    <Button className='h-12 w-[200px]  bg-based1 rounded-full sm:text-sm md:text-md gap-5'> <FaThList /> About Us</Button>
 
                                 </Link>
                             </div>
@@ -96,17 +96,17 @@ const About = () => {
                                     <CardContent>
                                         {/* <div className='text-4xl flex items-center gap-2 text-white bg-based my-2 p-5 rounded-xl '>{data.data}+ <span className='text-3xl'>{data.client}</span></div> */}
 
-                                        <div className='text-md md:text-xl flex items-center my-5  gap-2'><data.icon  className='text-based1'/>{data.value}</div>
+                                        <div className='text-md md:text-xl flex items-center my-5  gap-2'><data.icon className='text-based1' />{data.value}</div>
                                         <div className='font-thin text-justify text-[15px]'>{data.title}</div>
                                     </CardContent>
                                     <CardFooter className='grid grid-cols-1'>
                                         <Link href='/service'>
-                                        <div className='flex justify-between items-center mt-2 border rounded-full p-2 text-sm'>
-                                            Click Here
-                                            <Button className='rounded-full '>
-                                                <FaArrowUpRightDots />
-                                            </Button>
-                                        </div></Link>
+                                            <div className='flex justify-between items-center mt-2 border rounded-full p-2 text-sm'>
+                                                Click Here
+                                                <Button className='rounded-full '>
+                                                    <FaArrowUpRightDots />
+                                                </Button>
+                                            </div></Link>
                                     </CardFooter>
                                 </Card>
                             )

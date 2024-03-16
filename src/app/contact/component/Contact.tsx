@@ -18,8 +18,7 @@ const Contact = () => {
                                     Contact Us
                                 </h2>
                                 <p className="mb-8 text-justify md:text-center font-light  lg:mb-16 text-sm">
-                                PT SNB welcomes your inquiries, feedback, and suggestions. As a leading provider in our industry, we are committed to offering you the best service and support. Whether you have a question about our services, need assistance, or want to connect with our team, we are here to help. Please fill out the form below, and one of our representatives will get back to you as soon as possible. We look forward to hearing from you!
-
+                                    PT SNB menyambut baik pertanyaan, umpan balik, dan saran Anda. Sebagai penyedia terkemuka di industri kami, kami berkomitmen untuk memberikan layanan dan dukungan terbaik kepada Anda. Jika Anda memiliki pertanyaan tentang layanan kami, membutuhkan bantuan, atau ingin terhubung dengan tim kami, kami siap membantu Anda. Silakan isi formulir di bawah ini, dan salah satu perwakilan kami akan menghubungi Anda sesegera mungkin. Kami tunggu kabar dari Anda!
                                 </p>
                                 <div className="grid grid-cols-1 md:grid-cols-3 ">
                                     <Card className='col-span-2 bg-white border-none text-zinc-900 p-5 '>
@@ -134,21 +133,21 @@ const Contact = () => {
                                                     Address Company
                                                 </div>
                                                 <div className="font-italic my-2 mb-2 block space-y-4 text-sm ">
-                                                Jl. Jenderal Sudirman kav. 54-55, Menara Mandiri Tower 2, 19th floor, DKI Jakarta, Jakarta Selatan 12190, ID
+                                                    Jl. Jenderal Sudirman kav. 54-55, Menara Mandiri Tower 2, 19th floor, DKI Jakarta, Jakarta Selatan 12190, ID
                                                 </div>
-                                               
+
                                             </div>
                                             <div className="m-1 rounded-md  py-5">
                                                 <div className="text-md my-2 mb-2 block space-y-8 font-bold ">
                                                     HealthCare Company
                                                 </div>
                                                 <div className="font-italic my-2 mb-2 block space-y-4 text-sm ">
-                                                   SIMRS
+                                                    SIMRS
                                                 </div>
                                                 <div className="font-italic my-2 mb-2 block space-y-4 text-sm ">
-                                                   E-KLINIK
+                                                    E-KLINIK
                                                 </div>
-                                             
+
                                             </div>
                                             {/* <button onClick={handleClick}>abel</button> */}
                                         </div>

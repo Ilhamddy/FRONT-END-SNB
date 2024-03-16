@@ -34,16 +34,15 @@ const Header = () => {
                             </div>
                             <p></p>
                             <div className='text-justify'>
-
-                                <h5>We are dedicated to revolutionizing the healthcare industry Our platform is designed to streamline hospital operations, enhance patient care, and optimize overall efficiency within healthcare institutions.</h5>
+                                <h5>PT Solusi Nusantara Berdikari adalah pelopor dalam penyediaan solusi teknologi informasi yang berfokus pada industri kesehatan. Didirikan dengan semangat yang tak tergoyahkan oleh sekelompok konsultan ahli profesional yang telah mengakar dalam industri kesehatan selama lebih dari 30 tahun, kami menjelma sebagai kekuatan terkemuka dalam membawa inovasi teknologi ke ranah kesehatan.</h5>
                             </div>
                             <div className='grid grid-cols-1 md:grid-cols-2 gap-5 px-5 mt-20 my-'>
                                 <Link href='#detail'>
-                                <Button className=' w-full h-16 sm:text-sm  md:text-md gap-5 bg-based1'><FaEject /> Learn More</Button>
+                                    <Button className=' w-full h-16 sm:text-sm  md:text-md gap-5 bg-based1'><FaEject /> Learn More</Button>
                                 </Link>
                                 <Link href="/product">
-                                <Button className='h-16 w-full  sm:text-sm md:text-md gap-5'> <FaThList /> See Our Product</Button>
-                               </Link>
+                                    <Button className='h-16 w-full  sm:text-sm md:text-md gap-5'> <FaThList /> See Our Product</Button>
+                                </Link>
                             </div>
                         </div>
                         <div className='bg- bg-cover h-0 sm:h-[500px] md:h-[500px] my-5  md:my-0 mx-2 rounded-xl ' data-aos="fade-up"

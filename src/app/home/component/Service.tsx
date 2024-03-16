@@ -14,19 +14,16 @@ const Service = () => {
                         <p></p>
                         <div className="text-justify">
                             <h5>
-                                PT Solusi Nusantara Berdikari is dedicated to empowering
-                                healthcare institutions with advanced solutions that enable
-                                them to deliver superior patient care, optimize operations,
-                                and achieve sustainable growth in a rapidly evolving
-                                healthcare environment.
+                                Di PT Solusi Nusantara Berdikari, kami memahami kompleksitas serta tantangan yang dihadapi oleh lembaga kesehatan modern. Oleh karena itu, kami berdedikasi untuk menyediakan solusi yang dapat mengoptimalkan operasi, meningkatkan efisiensi, dan memberikan pelayanan yang berkualitas tinggi kepada pasien.
+
+
                             </h5>
                         </div>
                         <div className="text-justify my-5">
                             <h5>
-                                The vision of PT Solusi Nusantara Berdikari is to be a
-                                trusted partner and a driving force in transforming the
-                                healthcare landscape through technology, innovation, and
-                                excellence.
+                                Keunggulan kami terletak pada pendekatan yang holistik dalam mengembangkan solusi IT. Dari konsultasi awal hingga implementasi dan dukungan purna jual, kami mengintegrasikan pemahaman mendalam tentang kebutuhan klien dengan keahlian teknis yang tinggi untuk memberikan solusi yang sesuai dengan kebutuhan unik setiap organisasi.
+
+
                             </h5>{" "}
                         </div>
                         <div className="grid grid-cols-1 gap-5 px-5 md:mt-20 md:grid-cols-2 ">

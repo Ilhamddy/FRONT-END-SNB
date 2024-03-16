@@ -88,7 +88,7 @@ const config = {
         about:
           " linear-gradient(to top, #000000, rgba(255, 197, 0, 0.0)), url('/image/bgabout.jpg')",
         aboutpro:
-          " linear-gradient(to top, #000000, rgba(255, 197, 0, 0.0)), url('/image/aboutpro.jpg')",
+          " linear-gradient(to top, #000000, rgba(255, 197, 0, 0.0)), url('/image/aboutPro.jpg')",
         product:
           "linear-gradient(to top, #000000, rgba(255, 197, 0, 0.0)), url('/image/ProductPro.jpg')",
         news: "linear-gradient(to top, #000000, rgba(255, 197, 0, 0.0)), url('/image/news.jpg')",

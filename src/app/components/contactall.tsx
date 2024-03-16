@@ -10,15 +10,14 @@ const Contactall = () => {
                     <div className='grid md:grid-cols-2 '>
                         <div className='text-start m-5'>
                             <h2 className='text-white text-3xl md:text-5xl font-black my-5'>
-                                Interested in using products from SNB?
+                                Tertarik menggunakan produk dari SNB?
                             </h2>
                             <h3 className='text-white text-justify'>
-                                SNB is committed to staying at the forefront of healthcare technology, continually innovating and improving their products to incorporate the latest advancements.
-                            </h3>
+                                SNB berkomitmen untuk tetap menjadi yang terdepan dalam teknologi perawatan kesehatan, terus berinovasi dan meningkatkan produk mereka untuk menggabungkan kemajuan terbaru.   </h3>
                         </div>
                         <div className='flex justify-center md:justify-end items-center'>
                             <Link href={'/contact'}>
-                            <Button className='h-16 w-60 bg-based1 rounded-3xl text-2xl'> Contact Us</Button></Link>
+                                <Button className='h-16 w-60 bg-based1 rounded-3xl text-2xl'> Contact Us</Button></Link>
                         </div>
                     </div>
 

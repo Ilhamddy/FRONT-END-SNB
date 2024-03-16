@@ -11,7 +11,6 @@ const inter = Poppins({ subsets: ["latin"], weight: '400' });
 
 dataAdvantages
 export const metadata: Metadata = {
-  metadataBase: new URL('https://acme.com'),
   title: "SNB - Revolutionizing Healthcare with Integrated Solutions",
   description: "Explore PT SOLUSI NUSANTARA BERDIKARI's innovative healthcare solutions, integrating hospital information systems for seamless operations, enhanced patient care, and optimized efficiency.",
   keywords: "healthcare solutions, hospital information system, integrated healthcare application, patient care optimization, healthcare technology, hospital management software, medical software solutions, healthcare innovation, data security in healthcare, healthcare compliance solutions.",
@@ -19,7 +18,7 @@ export const metadata: Metadata = {
     type: "website",
     title: "SNB - Revolutionizing Healthcare with Integrated Solutions",
     description: "Explore PT SOLUSI NUSANTARA BERDIKARI's innovative healthcare solutions, integrating hospital information systems for seamless operations, enhanced patient care, and optimized efficiency.",
-    images: '/image/logoSNB.png'
+    images: '/image/bgabout.jpg'
   },
   twitter: {
     // cardType: "summary_large_image",

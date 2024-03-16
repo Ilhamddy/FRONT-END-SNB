@@ -12,32 +12,32 @@ const Services = () => {
                 <div className='md:mx-10 sm:mx-10 md:py-12'>
                     <div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 md:py-10 '>
                         <div className='flex flex-col justify-center mx-2'
-                        data-aos="fade-up"
-                        data-aos-offset="200"
-                        data-aos-delay="50"
-                        data-aos-duration="1000"
-                        data-aos-easing="ease-in-out"
-                        data-aos-mirror="true"
-                        data-aos-once="false">
-                            <div className='text-3xl md:text-5xl font-black text-center md:text-start '>
+                            data-aos="fade-up"
+                            data-aos-offset="200"
+                            data-aos-delay="50"
+                            data-aos-duration="1000"
+                            data-aos-easing="ease-in-out"
+                            data-aos-mirror="true"
+                            data-aos-once="false">
+                            <div className='text-5xl md:text-7xl font-black text-center md:text-start '>
                                 <h1><span className='text-based1'>Unlock Propedrity</span>, Choose Expert Guidance </h1>
                             </div>
                             <p></p>
-                            <div className='text-justify'>
+                            {/* <div className='text-justify'>
                                 <h5>We are dedicated to revolutionizing the healthcare industry Our platform is designed to streamline hospital operations, enhance patient care, and optimize overall efficiency within healthcare institutions.</h5>
-                            </div>
+                            </div> */}
                         </div>
                         <div className='flex flex-col justify-center mx-2 md:px-5'>
                             <div className='text-justify my-5'>
-                                <h5>We are dedicated to revolutionizing the healthcare industry Our platform is designed to streamline hospital operations, enhance patient care, and optimize overall efficiency within healthcare institutions.</h5>
+                                <h5>Komitmen kami terhadap pengembangan solusi IT yang terdepan dalam industri kesehatan merupakan inti dari identitas kami. Dengan keahlian yang luas dan pengalaman yang mendalam, kami mampu menyajikan solusi yang efektif dan efisien bagi lembaga kesehatan dan organisasi terkait.</h5>
                             </div>
                             <div className='flex flex-row gap-5 my-5'>
                                 <Link href={'#detail'}>
-                                <Button className='h-16 w-[200px] sm:text-sm  md:text-md gap-5 bg-based1'><FaEject /> Learn More</Button>
+                                    <Button className='h-16 w-[200px] sm:text-sm  md:text-md gap-5 bg-based1'><FaEject /> Learn More</Button>
                                 </Link>
 
                                 <Link href={'/product'}>
-                                <Button className='h-16  sm:text-sm md:text-md gap-5'> <FaThList /> See Our Product</Button>
+                                    <Button className='h-16  sm:text-sm md:text-md gap-5'> <FaThList /> See Our Product</Button>
                                 </Link>
                             </div>
                         </div>
@@ -49,7 +49,7 @@ const Services = () => {
                             <div className=' h-full bg-about bg-cover bg-center rounded-xl'>
                                 {/* <Image width={1000} height={700} alt='service snb' quality={100} src={'/image/bgabout.jpg'} className='object-cover' /> */}
                             </div>
-                            <div className='p-2 text-justify text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, soluta, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia, id nostrum.</div>
+                            <div className='p-2 text-justify text-sm'>Kami bangga menjadi mitra strategis bagi lembaga kesehatan di seluruh Nusantara, membantu mereka menavigasi perubahan teknologi dan mendukung misi mereka untuk memberikan pelayanan kesehatan yang berkualitas tinggi kepada masyarakat.</div>
                         </div>
                     </div>
                 </div>

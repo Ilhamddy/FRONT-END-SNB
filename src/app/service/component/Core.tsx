@@ -7,7 +7,7 @@ import {
     CardHeader,
     CardTitle,
 } from "@/components/ui/card"
-import { dataAdvantages } from '@/hooks/dataNavbar'
+import { dataAdvantages, dataService } from '@/hooks/dataNavbar'
 import { FaArrowUpRightDots } from 'react-icons/fa6'
 import { Button } from '@/components/ui/button'
 
@@ -20,20 +20,20 @@ const Core = () => {
                 <div className='md:mx-10 sm:mx-10 '>
                     <div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 md:py-10 '>
                         <div className='text-2xl md:text-4xl font-black text-center md:text-start '>
-                            <h1>We Collaborate Across Diverse Industry Landscapes</h1>
+                            <h1>Kami Berkolaborasi di Berbagai Industri Kesehatan</h1>
                         </div>
-                        <div className='text-sm text-justify mx-2'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae cupiditate temporibus maiores doloremque dolorem nam magni ullam et animi laborum!. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus in labore quam laboriosam totam nihil debitis illum optio ullam consequuntur. </div>
+                        <div className='text-sm text-justify mx-2'>PT Solusi Nusantara Berdikari menyediakan beragam layanan terkait solusi teknologi informasi untuk industri kesehatan. Berikut adalah beberapa layanan utama yang ditawarkan oleh perusahaan: </div>
                     </div>
                     <div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 '>
-                        {dataAdvantages.map((data) => {
+                        {dataService.map((data) => {
                             return (
-                                <Card className='m-5  grid grid-cols-1 justify-center text-justify rounded-2xl'   data-aos="fade-left"
-                                data-aos-offset="200"
-                                data-aos-delay="50"
-                                data-aos-duration="1000"
-                                data-aos-easing="ease-in-out"
-                                data-aos-mirror="true"
-                                data-aos-once="false">
+                                <Card className='m-5  grid grid-cols-1 justify-center text-justify rounded-2xl' data-aos="fade-left"
+                                    data-aos-offset="200"
+                                    data-aos-delay="50"
+                                    data-aos-duration="1000"
+                                    data-aos-easing="ease-in-out"
+                                    data-aos-mirror="true"
+                                    data-aos-once="false">
                                     <CardHeader>
                                         <CardDescription>
                                             <data.icon size={60} color='orange' />

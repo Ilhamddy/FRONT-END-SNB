@@ -12,21 +12,21 @@ const Product = () => {
 
                         </h2>
                         <h3>
-                            The company also provides implementation support to ensure seamless integration and efficient adoption of its solutions.
+                            Perusahaan ini juga menyediakan dukungan implementasi untuk memastikan integrasi yang efisien dari solusi-solusinya.
                         </h3>
                     </div>
                     <div className='grid sm:grid-cols-1 grid-cols-1 md:grid-cols-2 my-10'>
                         <Link href={'product-detail'}>
                             <div className='mx-2 bg- rounded-lg md:p-10' data-aos="fade-right"
-                            data-aos-offset="200"
-                            data-aos-delay="50"
-                            data-aos-duration="1000"
-                            data-aos-easing="ease-in-out"
-                            data-aos-mirror="true"
-                            data-aos-once="false">
+                                data-aos-offset="200"
+                                data-aos-delay="50"
+                                data-aos-duration="1000"
+                                data-aos-easing="ease-in-out"
+                                data-aos-mirror="true"
+                                data-aos-once="false">
                                 <div className='bg-product1 bg-cover bg-center h-64 sm:h-[500px] md:h-[500px] my-5  md:my-0 rounded-xl'></div>
                                 <h3 className='text-center font-black text-xl md:text-2xl my-5 '>SIMRS (Sistem Informasi Manajemen Rumah Sakit)</h3>
-                                <h4 className='text-justify  p-5'>SIMRS by PT Solusi Nusantara Berdikari is a comprehensive Hospital Management Information System designed to streamline hospital operations and enhance patient care. With SIMRS, healthcare institutions can effectively manage patient information, medical records, appointments, billing, and more, all within a single integrated platform.</h4>
+                                <h4 className='text-justify  p-5'>SIMRS dari PT Solusi Nusantara Berdikari adalah Sistem Informasi Manajemen Rumah Sakit yang komprehensif yang dirancang untuk merampingkan operasi rumah sakit dan meningkatkan perawatan pasien. Dengan SIMRS, institusi kesehatan dapat secara efektif mengelola informasi pasien, rekam medis, janji temu, penagihan, dan banyak lagi, semua dalam satu platform yang terintegrasi.</h4>
 
                             </div>
 
@@ -35,16 +35,16 @@ const Product = () => {
                         <Link href={'product-detail'}>
 
                             <div className='mx-2 bg- rounded-lg md:p-10' data-aos="fade-left"
-                            data-aos-offset="200"
-                            data-aos-delay="50"
-                            data-aos-duration="1000"
-                            data-aos-easing="ease-in-out"
-                            data-aos-mirror="true"
-                            data-aos-once="false">
+                                data-aos-offset="200"
+                                data-aos-delay="50"
+                                data-aos-duration="1000"
+                                data-aos-easing="ease-in-out"
+                                data-aos-mirror="true"
+                                data-aos-once="false">
 
                                 <div className='bg-product2 bg-cover h-64 bg-center sm:h-[500px] md:h-[500px] my-5  md:my-0  rounded-xl'></div>
                                 <h3 className='text-center font-black text-xl md:text-2xl my-5 '>e-Klinik (Elektronik Klinik):</h3>
-                                <h4 className='text-justify  p-5'>e-Klinik by PT Solusi Nusantara Berdikari is a user-friendly electronic medical records (EMR) solution designed for outpatient clinics and medical practices. This intuitive platform empowers healthcare providers to digitize patient records, streamline administrative tasks, and deliver personalized care efficiently.</h4>
+                                <h4 className='text-justify  p-5'>e-Klinik dari PT Solusi Nusantara Berdikari adalah solusi rekam medis elektronik (EMR) yang mudah digunakan dan dirancang untuk klinik rawat jalan dan praktik medis. Platform intuitif ini memberdayakan penyedia layanan kesehatan untuk mendigitalkan catatan pasien, merampingkan tugas-tugas administratif, dan memberikan perawatan yang dipersonalisasi secara efisien.</h4>
 
                             </div>
                         </Link>

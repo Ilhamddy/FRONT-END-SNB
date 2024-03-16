@@ -5,7 +5,7 @@ import { FaEject } from 'react-icons/fa6'
 
 const Product = () => {
     return (
-        <section className='bg-product bg-center bg-cover'>
+        <section className='bg-product bg-center bg-cover' >
             <div className='h-screen bg-cover md:mx-10 sm:mx-10 mx-3 py-10'>
                 <div className='md:mx-10 sm:mx-10 py-10 md:py-24 pt-24 md:pt-64'>
 
