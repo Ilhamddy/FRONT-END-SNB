@@ -1,8 +1,7 @@
-import React from 'react'
-import Detail from './component/Detail'
-import Price from './component/Price'
-import Modul from './component/Modul'
 import Contactall from '@/app/components/contactall'
+import Detail from './component/Detail'
+import Modul from './component/Modul'
+import Price from './component/Price'
 
 const page = () => {
   return (

@@ -11,33 +11,57 @@ const Question = () => {
 
         {
             value: 'item-2',
-            title: "How can I access my medical records?",
-            description: "You can access your medical records through our patient portal or by contacting our medical records department."
+            title: "Apa itu aplikasi sistem manajemen rumah sakit (SIMRS)?              ",
+            description: "Aplikasi sistem manajemen rumah sakit adalah perangkat lunak yang dirancang khusus untuk membantu mengelola operasi sehari-hari dalam sebuah rumah sakit. Ini mencakup manajemen pasien, rekam medis elektronik, manajemen inventaris, keuangan, dan berbagai aspek lain dari administrasi rumah sakit. "
         },
         {
             value: 'item-3',
-            title: "What insurance plans do you accept?",
-            description: "We accept a wide range of insurance plans. Please contact our billing department for more information on accepted insurances."
+            title: "Apa manfaat menggunakan aplikasi sistem manajemen rumah sakit?            ",
+            description: " Menggunakan aplikasi sistem manajemen rumah sakit dapat meningkatkan efisiensi operasional, meningkatkan pelayanan pasien, mengoptimalkan manajemen inventaris, mengurangi kesalahan dalam rekam medis, serta membantu dalam pemantauan dan pelaporan kinerja rumah sakit.            "
         },
         {
             value: 'item-4',
-            title: "Can I schedule an appointment online?",
-            description: "Yes, you can schedule an appointment online through our website or patient portal."
+            title: "Bagaimana aplikasi ini membantu dalam manajemen pasien?",
+            description: "Aplikasi sistem manajemen rumah sakit memungkinkan pengelolaan jadwal pasien, registrasi pasien, pemantauan status pasien, dan koordinasi perawatan di antara departemen dan staf medis. Hal ini membantu meningkatkan efisiensi dalam penerimaan, perawatan, dan pemulangan pasien.            "
         },
         {
             value: 'item-5',
-            title: "What should I bring to my first appointment?",
-            description: "Please bring a photo ID, your insurance card, and any medical records that can help us understand your medical history."
+            title: "Apakah aplikasi ini aman untuk digunakan dalam menangani informasi medis sensitif?            ",
+            description: "Ya, keamanan informasi medis adalah prioritas utama dalam pengembangan aplikasi sistem manajemen rumah sakit. Biasanya, aplikasi dilengkapi dengan fitur keamanan yang kuat, termasuk kontrol akses, enkripsi data, dan audit log untuk melindungi informasi sensitif pasien.            "
         },
         {
             value: 'item-6',
-            title: "How do I request a prescription refill?",
-            description: "You can request a prescription refill through our patient portal or by calling our pharmacy directly."
+            title: "Bagaimana integrasi dengan sistem eksternal seperti BPJS Kesehatan dilakukan?",
+            description: "Integrasi dengan sistem eksternal seperti BPJS Kesehatan dilakukan melalui teknologi bridging atau antarmuka khusus yang memungkinkan pertukaran data antara sistem rumah sakit dan sistem BPJS Kesehatan. Hal ini memungkinkan klaim, verifikasi kepesertaan, dan administrasi lainnya dilakukan dengan lebih efisien.            "
         },
+       
+    ]
+    const anyQuestion2 = [
+       
         {
             value: 'item-7',
-            title: "What are your visiting hours?",
-            description: "Our visiting hours are from 9 AM to 8 PM. Special arrangements can be made in certain circumstances."
+            title: "Apakah aplikasi ini dapat disesuaikan dengan kebutuhan spesifik rumah sakit?            ",
+            description: "Ya, kebanyakan aplikasi sistem manajemen rumah sakit dapat disesuaikan dengan kebutuhan spesifik rumah sakit. Pengguna dapat menyesuaikan berbagai fitur dan modul sesuai dengan kebutuhan operasional mereka.            "
+        },
+        {
+            value: 'item-8',
+            title: "Bagaimana proses pelatihan staf untuk menggunakan aplikasi ini dilakukan?            ",
+            description: "Biasanya, penyedia aplikasi sistem manajemen rumah sakit menyediakan pelatihan kepada staf rumah sakit untuk menggunakan aplikasi tersebut. Pelatihan dapat berupa sesi pelatihan langsung, panduan pengguna, atau tutorial daring, disesuaikan dengan kebutuhan dan preferensi rumah sakit."
+        },
+        {
+            value: 'item-9',
+            title: "Bagaimana dukungan teknis untuk aplikasi ini tersedia?            ",
+            description: " Penyedia aplikasi biasanya menyediakan dukungan teknis dalam bentuk layanan bantuan, pusat pengetahuan, atau kontak langsung dengan tim dukungan teknis. Hal ini membantu pengguna dalam menyelesaikan masalah teknis atau pertanyaan terkait penggunaan aplikasi.            "
+        },
+        {
+            value: 'item-10',
+            title: " Apakah aplikasi ini dapat diakses secara mobile atau dari jarak jauh?            ",
+            description: "Banyak aplikasi sistem manajemen rumah sakit menyediakan akses melalui perangkat mobile atau jarak jauh. Ini memungkinkan staf rumah sakit untuk mengakses informasi dan menjalankan tugas administratif dari mana saja, meningkatkan fleksibilitas dan keterjangkauan.            "
+        },
+        {
+            value: 'item-11',
+            title: " Apakah aplikasi ini membutuhkan infrastruktur teknologi khusus untuk dijalankan            ?            ",
+            description: "BAplikasi ini dapat dijalankan di berbagai infrastruktur teknologi, baik lokal (on-premise) maupun berbasis cloud. Namun, kebutuhan infrastruktur teknologi khusus dapat bervariasi tergantung pada skala dan fitur aplikasi yang digunakan.            "
         }
     ]
     return (
@@ -62,13 +86,33 @@ const Question = () => {
                             </h3>
 
                         </div>
-                        <div>
+                    </div>
+                    <div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 md:py-10 place-item gap-5  text-sm'>
+                    <div >
                             {anyQuestion.map((data) => {
                                 return (
                                     <>
-                                        <Accordion type="single" collapsible className="w-full">
+                                        <Accordion type="single" collapsible className="w-full ">
                                             <AccordionItem value={data.value} >
-                                                <AccordionTrigger className='text-md bg-third p-5 rounded'>{data.title}</AccordionTrigger>
+                                                <AccordionTrigger className='text-md text-white bg-dope p-5 rounded'>{data.title}</AccordionTrigger>
+                                                <AccordionContent className='bg-white p-5'>
+                                                    {data.description}
+                                                </AccordionContent>
+                                            </AccordionItem>
+
+                                        </Accordion>
+                                    </>
+                                )
+                            })}
+                        </div>
+                        <div>
+                            {anyQuestion2.map((data) => {
+                                return (
+                                    <>
+                                        <Accordion type="single" collapsible className="w-full ">
+                                            <AccordionItem value={data.value} >
+                                            <AccordionTrigger className='text-md text-white bg-dope p-5 rounded'>{data.title}</AccordionTrigger>
+
                                                 <AccordionContent className='bg-white p-5'>
                                                     {data.description}
                                                 </AccordionContent>

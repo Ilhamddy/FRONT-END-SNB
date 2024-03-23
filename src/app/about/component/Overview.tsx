@@ -21,7 +21,7 @@ const Overview = () => {
                             <p></p>
                             <div className="text-justify ">
                                 <h5>
-                                    PT Solusi Nusantara Berdikari berdedikasi untuk memberdayakan institusi kesehatan yang maju.
+                                Tentang Kami : Didirikan dengan penuh semangat oleh konsultan ahli profesional yang memiliki pengalaman lebih dari 30 tahun di industri kesehatan, HEALTHTECHS memfokuskan diri pada solusi untuk sektor kesehatan.
 
                                 </h5>
                                 <h5 className='my-5'>

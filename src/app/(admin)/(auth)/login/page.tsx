@@ -1,11 +1,24 @@
+'use client'
 import { Metadata } from "next";
 import LoginPage from "./component/Login";
-export const metadata: Metadata = {
-  title: "Authentication",
-  description: "Authentication forms built using the components.",
-};
+import { useAppSelector } from "@/lib/hooks";
+import { useRouter } from "next/navigation";
+import { useEffect } from "react";
+
 
 export default function AuthenticationPage() {
+  const userId = useAppSelector((state) => state.users);
+
+
+  console.log(userId);
+  
+  const router = useRouter();
+  useEffect(() => {
+    if (userId?.id) {
+      router.push('/dashboard');
+    }
+  });
+
   return (
     <main>
       <LoginPage />

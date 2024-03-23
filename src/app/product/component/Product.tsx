@@ -12,12 +12,13 @@ const Product = () => {
                     <div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 md:py-10  '>
                         <div className='flex flex-col justify-center mx-2 text-white'>
                             <div className='md:text-end text-center'>
-                                <h5>We are dedicated to revolutionizing the healthcare industry.</h5>
+                                <h5>Kami berdedikasi untuk merevolusi industri kesehatan.</h5>
+
                             </div>
                             <div className='text-6xl my-5  md:text-8xl font-black text-center md:text-end space-y-28 mb-5'>
                                 <div>
-                                    <h1>SNB  <span className='text-based'>solutions</span> </h1>
-                                    <h1>in the healthcare.</h1>
+                                    <h1>SNB  <span className='text-based'>Solusi</span> </h1>
+                                    <h1> Healthcare Anda.</h1>
                                 </div>
                             </div>
                             <div className='grid grid-cols-1 md:grid-cols-2 gap-5 px-5 mt-20 my-'>

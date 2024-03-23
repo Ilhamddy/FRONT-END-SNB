@@ -17,11 +17,9 @@ const Profile = () => {
                             <p></p>
                             <div className="text-justify ">
                                 <h5>
-                                    Rasakan pengalaman manajemen rumah sakit yang lancar dengan SIMRS, Sistem Informasi Manajemen Rumah Sakit kami yang komprehensif. Mulai dari pendaftaran pasien hingga pemulangan pasien, SIMRS menyederhanakan setiap aspek operasional rumah sakit, memastikan efisiensi, akurasi, dan kepuasan pasien.
-                                </h5>
-                                <h5 className='my-5'>
-                                    Temukan standar baru keunggulan dalam manajemen layanan kesehatan dengan produk revolusioner PT Solusi Nusantara Berdikari: SIMRS dan e-Clinic. Dipercaya oleh lebih dari 100 rumah sakit dan klinik di seluruh Indonesia, solusi kami dirancang untuk mentransformasi institusi kesehatan Anda dan meningkatkan kualitas layanan yang Anda berikan kepada pasien.
-                                </h5>
+                                Projek Kami : Heatlhcare Technology Solution (HEALTHTECHS) merupakan solusi terkini untuk seluruh Fasilitas Pelayanan Kesehatan (RS / Puskesmas / Klinik / TPMD), dirancang untuk mengoptimalkan mutu pelayanan medis melalui modul-modul yang terintegrasi. Integrasi tidak hanya mencakup antar instalasi internal di fasilitas kesehatan, tetapi juga mencakup keterhubungan dengan entitas di luar fasilitas, seperti BPJS Kesehatan, Kementerian Kesehatan Republik Indonesia, dan instansi lainnya. Tujuan utama dari solusi ini adalah meningkatkan efisiensi dan efektivitas pelayanan kesehatan dengan menyelaraskan berbagai elemen yang terlibat dalam proses pelayanan medis.
+
+      </h5>
                             </div>
 
                         </div>

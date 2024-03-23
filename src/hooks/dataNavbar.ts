@@ -12,15 +12,15 @@ import {
 
 export const dataNav = [
   {
-    title: "About",
+    title: "Tentang",
     link: "/about",
   },
   {
-    title: "Service",
+    title: "Servis",
     link: "/service",
   },
   {
-    title: "Product",
+    title: "Produk",
     link: "/product",
     list: [
       {
@@ -44,11 +44,11 @@ export const dataNav = [
     ],
   },
   {
-    title: "News",
+    title: "Berita",
     link: "/news",
   },
   {
-    title: "Contact Us",
+    title: "Hubungi Kami",
     link: "/contact",
   },
 ];
@@ -96,50 +96,49 @@ export const dataService = [
   {
     data: "120",
     client: "Lorem Ipsum",
-    title: "SIMRS",
+    title: "Tailor made",
     description:
-      "SIMRS (Sistem Informasi Manajemen Rumah Sakit) menetapkan standar untuk manajemen pasien, menawarkan integrasi yang mulus dari proses registrasi, penerimaan, dan proses penutupan, memastikan efisiensi tak tertandingi dan kepuasan pasien.",
-    icon: FaHospital,
+"Healthtechs didevelop sesuai dengan kebutuhan Anda. Sehingga Anda lebih efektif dan efisien dalam bekerja",    icon: FaHospital,
   },
   {
     data: "90",
     client: "Lorem Ipsum",
-    title: "Electronic Medical Records",
+    title: "Tampilan responsif",
     description:
-      "Rekam Medis Elektronik kami merevolusi manajemen informasi pasien, memastikan akses yang aman dan mudah ke riwayat pasien, rencana pengobatan, dan dokumen medis.",
+      "Tampilan antarmuka yang responsif bisa dibuka menggunakan perangkat mobile, tablet, maupun desktop ",
     icon: FaFileMedical,
   },
   {
     data: "150",
     client: "Lorem Ipsum",
-    title: "Appointment Scheduling",
+    title: "Kemudahan Impelementasi",
     description:
-      "Penjadwalan Janji kami dirancang untuk menyederhanakan proses penjadwalan janji dengan platform intuitif, yang dirancang untuk mengurangi waktu tunggu, meningkatkan kepuasan pasien, dan mengoptimalkan beban kerja staf Anda.",
+      "Kemudahan dalam implementasi aplikasi didukung oleh tim yang profesional dan berpengalaman      ",
     icon: FaCalendarCheck,
   },
   {
     data: "90",
     client: "Lorem Ipsum",
-    title: "Pharmacy Management",
+    title: "Cloud Based / On Premise",
     description:
-      "Manajemen Apotek kami menyederhanakan pengelolaan dispensasi obat, kontrol inventaris, dan manajemen resep, memastikan akurasi dan efisiensi dalam operasi apotek Anda.",
+      " Healthtechs dapat diinstal dalam layanan cloud maupun pada server fisik yang dimiliki fasyankes      ",
     icon: FaPills,
   },
   {
     data: "150",
     client: "Lorem Ipsum",
-    title: "Billing and Invoicing",
+    title: "Ringan dan cepat",
     description:
-      "Penagihan dan Penagihan kami dirancang untuk mengotomatisasi proses penagihan dan penagihan dengan solusi komprehensif, yang dirancang untuk menyederhanakan operasi keuangan, mengurangi kesalahan, dan meningkatkan manajemen siklus pendapatan.",
+      " Kinerja aplikasi yang responsif dengan kebutuhan sumber daya komputasi minimal, memberikan pengalaman pengguna yang efisien dan nyaman.      ",
     icon: FaFileInvoiceDollar,
   },
   {
     data: "90",
     client: "Lorem Ipsum",
 
-    title: "Laboratory Information System",
+    title: "Integrasi",
     description:
-      "Sistem Informasi Laboratorium kami meningkatkan efisiensi laboratorium Anda dengan menawarkan manajemen pesanan tes yang mulus, entri hasil, dan kepatuhan dengan standar regulasi.",
+      "Healthtechs dapat terintegrasi dengan seluruh instansi yang ada seperti BPJS Kesehatan, Kemenkes RI, dll.      ",
     icon: FaVials,
   },
 ];

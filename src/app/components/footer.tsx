@@ -16,10 +16,8 @@ const Footersection = () => {
                 alt="logo snb"
               />
             </div>
-
-            <p className="mt-4 max-w-xs text-gray-500">
-              SNB, a leading provider in innovative solutions, is dedicated to
-              enhancing your digital experience.
+            <p className="mt-4 max-w-xs text-gray-500 flex text-justify">
+            SNB, penyedia terkemuka dalam solusi inovatif, berdedikasi untuk meningkatkan pengalaman digital Anda.
             </p>
 
             <ul className="mt-8 flex gap-6">

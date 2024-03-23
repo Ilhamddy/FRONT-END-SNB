@@ -7,10 +7,13 @@ import React from "react";
 import { AnyRecord } from "dns";
 import { INews } from "@/types/news";
 import useNews from "@/hooks/getNews";
+import { baseImage, baseUrl } from "@/app/utils/databases";
 
 
 const Listnews = () => {
   const getNews = useNews(); 
+  // console.log(getNews[0].image);
+  
   return (
     <section className="bg-">
       <div className="mx-3 h-full bg-cover py-10 sm:mx-10 md:mx-10">
@@ -32,7 +35,7 @@ const Listnews = () => {
                                         <Card>
                                             <div className='flex flex-col justify-between p-5 md:h-[500px]' key={index}>
 
-                                                <Image src={"/image/aboutPro.jpg"} width={500} height={400} alt='' className='rounded-xl md:h-[250px] text-3xl md:text-5xl  text-center md:text-start' />
+                                                <Image src={`${baseImage}/news/${news.image}`} alt={''} width={500} height={400}  className='rounded-xl md:h-[250px] text-3xl md:text-5xl  text-center md:text-start' />
                                                 <p></p>
                                                 <div>
                                                     <h2 className='text-2xl my-2'>{news.title}.</h2>

@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardFooter } from '@/components/ui/card'
+import { dataService } from '@/hooks/dataNavbar'
 import Link from 'next/link'
 import { title } from 'process'
 import React from 'react'
@@ -66,7 +67,7 @@ const About = () => {
                                 data-aos-easing="ease-in-out"
                                 data-aos-mirror="true"
                                 data-aos-once="false">
-                                <h1><span className='text-based1'>Unlock Propedrity</span>, Choose Expert Guidance Work with PT. Solusi Nusantara Berdikari</h1>
+                                <h1><span className='text-based1'></span>Bekerja Sama dengan PT. Solusi Nusantara Berdikari</h1>
                             </div>
                         </div>
                         <div className='flex flex-col justify-center mx-2 md:px-5'>
@@ -77,27 +78,27 @@ const About = () => {
                                 {/* <Button className='h-16 w-[200px] sm:text-sm  md:text-md gap-5 bg-based1'><FaEject /> Learn More</Button> */}
 
                                 <Link href='/about'>
-                                    <Button className='h-12 w-[200px]  bg-based1 rounded-full sm:text-sm md:text-md gap-5'> <FaThList /> About Us</Button>
+                                    <Button className='h-12 w-[200px]  bg-based1 rounded-full sm:text-sm md:text-md gap-5'> <FaThList /> Tentang Kami</Button>
 
                                 </Link>
                             </div>
                         </div>
                     </div>
                     <div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 md:py-10 md:p-2 md:h-full gap-5' >
-                        {dataProduct.map((data) => {
+                        {dataService.map((data) => {
                             return (
-                                <Card className='transition duration-300  hover:border-white bg-transparent bg-gray-100  shadow-xl md:mx-0 m-5 rounded-2xl' key={data.value} data-aos="fade-left"
+                                <Card className='transition duration-300  hover:border-white bg-transparent bg-gray-100  shadow-xl md:mx-0 m-5 rounded-2xl' key={data.title} data-aos="fade-left"
                                     data-aos-offset="200"
                                     data-aos-delay="50"
                                     data-aos-duration="1000"
                                     data-aos-easing="ease-in-out"
                                     data-aos-mirror="true"
                                     data-aos-once="false">
-                                    <CardContent>
+                                    <CardContent className='md:h-[200px]'>
                                         {/* <div className='text-4xl flex items-center gap-2 text-white bg-based my-2 p-5 rounded-xl '>{data.data}+ <span className='text-3xl'>{data.client}</span></div> */}
 
-                                        <div className='text-md md:text-xl flex items-center my-5  gap-2'><data.icon className='text-based1' />{data.value}</div>
-                                        <div className='font-thin text-justify text-[15px]'>{data.title}</div>
+                                        <div className='text-md md:text-xl flex items-center my-5  gap-2'><data.icon className='text-based1' />{data.title}</div>
+                                        <div className='font-thin text-justify text-[15px]'>{data.description}</div>
                                     </CardContent>
                                     <CardFooter className='grid grid-cols-1'>
                                         <Link href='/service'>

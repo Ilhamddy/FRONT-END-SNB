@@ -1,8 +1,7 @@
 'use client'
 
-import React from 'react'
-import { cn } from "@/lib/utils"
-import { Button, buttonVariants } from "@/components/ui/button"
+import { baseUrl } from '@/app/utils/databases'
+import { Button } from "@/components/ui/button"
 import {
   Card,
   CardContent,
@@ -11,16 +10,17 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import { Checkbox } from "@/components/ui/checkbox"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
-import { useFormik } from 'formik'
+import { dataAdvantages } from '@/hooks/dataNavbar'
+import { loginAction } from '@/lib/features/userSlice'
+import { useAppDispatch, useAppSelector } from '@/lib/hooks'
 import axios, { AxiosError } from 'axios'
-import { baseUrl } from '@/app/utils/databases'
-import toast, { Toaster } from 'react-hot-toast'
+import { useFormik } from 'formik'
 import { useRouter } from 'next/navigation'
-import * as yup from 'yup';
-import YupPassword from 'yup-password';
+import toast, { Toaster } from 'react-hot-toast'
+import * as yup from 'yup'
+import YupPassword from 'yup-password'
 YupPassword(yup);
 
 const validationSchema = yup.object().shape({
@@ -32,6 +32,13 @@ const validationSchema = yup.object().shape({
 });
 
 const CardLogin = () => {
+
+  const dispatch = useAppDispatch();
+  const selector = useAppSelector((state) => state.users)
+
+ console.log('data selector' ,selector);
+
+
   const router = useRouter();
   const formik = useFormik({
     initialValues: {
@@ -41,10 +48,20 @@ const CardLogin = () => {
     validationSchema,
     onSubmit: async (values) => {
       try {
-        await axios.post(`${baseUrl}/user/login`, {
+        const { data } = await axios.post(`${baseUrl}/user/login`, {
           usernameOrEmail: values.usernameOrEmail,
           password: values.password,
         })
+
+        console.log(data);
+
+        dispatch(loginAction(data.data.dataValues));
+        console.log(data.data);
+        
+        localStorage.setItem('token', data.token)
+        console.log('data token', data.token);
+        
+        
         toast.success("Login Success", {
           duration: 4000,
         });
@@ -52,7 +69,7 @@ const CardLogin = () => {
       } catch (error) {
         if (error instanceof AxiosError) {
           const errorMsg = error.response?.data || error.message;
-          alert(errorMsg);
+          toast.error(errorMsg);
         }
       }
     }

@@ -13,13 +13,13 @@ const About = () => {
                     <div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 md:py-10  '>
                         <div className='flex flex-col justify-center mx-2'>
                             <div className='md:text-justify text-center'>
-                                <h5>We are dedicated to revolutionizing the healthcare industry.</h5>
+                                <h5>Kami berdedikasi untuk merevolusi industri kesehatan.</h5>
                             </div>
                             <div className='text-6xl my-5  md:text-8xl font-black text-center md:text-start space-y-28 mb-5'>
                                 {/* <h1>PT. Solusi <span className='text-based'>Nusantara</span> Berdikari</h1> */}
                                 <div>
-                                    <h1>Solusi <span className='text-based'>Innovative</span> </h1>
-                                    <h1>in the healthcare.</h1>
+                                    <h1>Solusi <span className='text-based'>Innovatif</span> </h1>
+                                    <h1> healthcare.</h1>
                                     {/* {news.map((data, index) => {
                                         return (
                                             <div key={data}>

@@ -22,7 +22,6 @@ import { useFormik } from "formik";
 
 
 const ButtonEdit = ({ data }: { data: INews }) => {
-  console.log("title", data.id);
 
   const formik = useFormik({
     initialValues: {
@@ -46,7 +45,6 @@ const ButtonEdit = ({ data }: { data: INews }) => {
     },
   });
 
-  console.log(formik);
 
   //   const handleEdit = async (newsId: number) => {
   //     try {

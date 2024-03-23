@@ -16,31 +16,45 @@ import { useFormik } from "formik";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
+import { FaImage } from "react-icons/fa6";
 
 const CreateNews = () => {
 
   const router = useRouter();
+  const [image, setImage] = useState(null); 
   const formik = useFormik({
     initialValues: {
       title: "",
       description: "",
+      image : "",
     },
-    onSubmit: async (values) => {
+    onSubmit: async (values, image: any) => {
       try {
-        await axios.post(`${baseUrl}/news/create-news`, {
-          title: values.title,
-          description: values.description,
+
+        const formData = new FormData(); // Create FormData object
+        formData.append('title', values.title);
+        formData.append('description', values.description);
+        formData.append('image', image); // Append the image file
+
+
+        await axios.post(`${baseUrl}/news/create-news`,formData, {
+          headers: {
+            'Content-Type': 'multipart/form-data' // Set content type to multipart/form-data
+          }
         });
         toast.success("Add succes");
         router.push("/dashboard");
       } catch (error) {
-        if (error instanceof AxiosError) {
-          const errorMsg = error.response?.data || error.message;
-          toast.error(errorMsg);
-        }
+        
+          toast.error("Image not found");
+        
       }
     },
   });
+
+  const handleImageChange = (event : any) => {
+    setImage(event.target.files[0]); // Update the image state with the selected file
+  };
 
   //   useEffect(() => {
   //     createPostNews();
@@ -52,7 +66,7 @@ const CreateNews = () => {
         <div className="pt-24 sm:mx-10  md:mx-10">
           <Card className="w-full">
             <CardHeader className="space-y-1">
-              <CardTitle className="text-4xl">Submit a news post</CardTitle>
+              <CardTitle className="text-5xl">Submit a news post</CardTitle>
               <CardDescription className="text-xl">
                 Submit your news post for review by our editorial team.
               </CardDescription>
@@ -73,14 +87,14 @@ const CreateNews = () => {
                     value={formik.values.title}
                   />
                 </div>
-                <div className="space-y-2">
+                {/* <div className="space-y-2">
                   <Label htmlFor="author">Author</Label>
                   <Input id="author" placeholder="Enter your name" />
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="date">Date</Label>
                   <Input id="date" placeholder="Select the date" type="date" />
-                </div>
+                </div> */}
                 <div className="space-y-2">
                   <Label htmlFor="content">Content</Label>
                   <Textarea
@@ -93,6 +107,32 @@ const CreateNews = () => {
                     value={formik.values.description}
                   />
                 </div>
+                    {/* File Upload */}
+        {/* <div className="my-6">
+          <Label htmlFor="fileUpload" value="Upload Images" />
+          <filein
+            id="fileUpload"
+            name="files"
+            multiple
+            onChange={handleFileChange}
+            className="mt-1"
+          />              
+        </div> */}
+                <CardContent className="flex items-center gap-4 py-4">
+        <div className="flex flex-col gap-1.5">
+          <Label
+            className="border border-gray-200 bg-white rounded-md cursor-pointer w-24 h-8 flex items-center justify-center"
+            htmlFor="picture"
+          >  Choose
+            <Input accept="image/*" className="sr-only" id="picture" type="file"  name="image" 
+                    onChange={handleImageChange}
+                    onBlur={formik.handleBlur}
+                    value={formik.values.image}/>
+          </Label>
+          <div>Can't find the right file? Make sure it's a .jpg, .jpeg, or .png and not larger than 1MB.</div>
+        </div>
+      </CardContent>
+
                   <Button type="submit" className="my-10">Submit</Button>
               </form>
             </CardContent>

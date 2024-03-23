@@ -20,7 +20,7 @@ const Services = () => {
                             data-aos-mirror="true"
                             data-aos-once="false">
                             <div className='text-5xl md:text-7xl font-black text-center md:text-start '>
-                                <h1><span className='text-based1'>Unlock Propedrity</span>, Choose Expert Guidance </h1>
+                                <h1><span className='text-based1'>Membuka Propedrity </span>, Pilihlah Pengalaman Profesional </h1>
                             </div>
                             <p></p>
                             {/* <div className='text-justify'>
@@ -33,11 +33,11 @@ const Services = () => {
                             </div>
                             <div className='flex flex-row gap-5 my-5'>
                                 <Link href={'#detail'}>
-                                    <Button className='h-16 w-[200px] sm:text-sm  md:text-md gap-5 bg-based1'><FaEject /> Learn More</Button>
+                                    <Button className='h-16 w-[200px] sm:text-sm  md:text-md gap-5 bg-based1'><FaEject /> Tentang kami</Button>
                                 </Link>
 
                                 <Link href={'/product'}>
-                                    <Button className='h-16  sm:text-sm md:text-md gap-5'> <FaThList /> See Our Product</Button>
+                                    <Button className='h-16 w-[200px] sm:text-sm md:text-md gap-5'> <FaThList /> Produk Kami</Button>
                                 </Link>
                             </div>
                         </div>

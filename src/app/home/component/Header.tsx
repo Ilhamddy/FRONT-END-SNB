@@ -38,10 +38,10 @@ const Header = () => {
                             </div>
                             <div className='grid grid-cols-1 md:grid-cols-2 gap-5 px-5 mt-20 my-'>
                                 <Link href='#detail'>
-                                    <Button className=' w-full h-16 sm:text-sm  md:text-md gap-5 bg-based1'><FaEject /> Learn More</Button>
+                                    <Button className=' w-full h-16 sm:text-sm  md:text-md gap-5 bg-based1'><FaEject /> Tentang kami</Button>
                                 </Link>
                                 <Link href="/product">
-                                    <Button className='h-16 w-full  sm:text-sm md:text-md gap-5'> <FaThList /> See Our Product</Button>
+                                    <Button className='h-16 w-full  sm:text-sm md:text-md gap-5'> <FaThList /> Produk Kami</Button>
                                 </Link>
                             </div>
                         </div>

@@ -61,10 +61,7 @@ const CardRegister = () => {
         toast.success("Add User succes");
         router.push("/login");
       } catch (error) {
-        if (error instanceof AxiosError) {
-          const errorMsg = error.response?.data || error.message;
-          alert(errorMsg);
-        }
+       toast.error("Email Already Exist")
       }
     },
   });

@@ -6,6 +6,7 @@ import Footersection from "./components/footer";
 import Navbarsection from "./components/navbar";
 import "./globals.css";
 import { dataAdvantages } from "@/hooks/dataNavbar";
+import StoreProvider from "./storeProvider";
 
 const inter = Poppins({ subsets: ["latin"], weight: '400' });
 
@@ -37,16 +38,21 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
         >
+      <StoreProvider>
+
           <Navbarsection />
           {children}
-          <Footersection />
-        </ThemeProvider>
+            <Footersection />
+          </StoreProvider>
+            
+          </ThemeProvider>
       </body>
     </html>
   );
