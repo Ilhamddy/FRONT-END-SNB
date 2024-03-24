@@ -30,7 +30,7 @@ const Price = () => {
                                     Silakan sesuaikan pilihan modul dengan kebutuhan Anda untuk mendapatkan harga yang sesuai. Segera hubungi
                                 </p>
                                 
-                                <div className='flex justify-center gap-10 mt-10 items-center'>
+                                <div className='md:flex grid grid-cols-1  justify-center gap-10 mt-10 items-center'>
                                 <Link href={'/contact'}>
                                         <Button className='h-16 w-56 bg-based1 rounded-xl'>  021-5266690 / 08125419118</Button></Link>
                                   <p className='text-dope'>  atau</p>

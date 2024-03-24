@@ -1,12 +1,14 @@
 'use client'
-import Image from "next/image";
 
 
 import useGetNewsById from "@/hooks/getNewsByid";
+import { baseImage } from "@/app/utils/databases";
+import Image from "next/image";
 
   interface INews {
     id: number,
-    title: string,
+      title: string,
+      image: string,
     description: string,
     createdAt : Date,
     }
@@ -14,6 +16,8 @@ import useGetNewsById from "@/hooks/getNewsByid";
 const NewsDetail = () => {
  
     const getNewsById: any = useGetNewsById();
+    console.log(getNewsById.image);
+    
 
 
     return (
@@ -27,8 +31,8 @@ const NewsDetail = () => {
                                 height={500}
                                 width={500}
                                 alt="Kemenkes SNB"
-                                src={"/news/bridging.jpeg"}
-                            />
+                                src={`${baseImage}/news/${getNewsById.image}`}
+                            /> 
                         </div>
 
                         <div className="flex flex-col justify-center">

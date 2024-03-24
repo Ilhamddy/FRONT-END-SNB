@@ -179,7 +179,7 @@ const Modul = () => {
                                 Healthcare dapat memberikan layanan solusi terbaik untuk kebutuhan Software Rumah Sakit
                                 </p>
                         </div>
-                        <div className='grid grid-cols-4 justify-center mt-10 items-center text-white'>
+                        <div className='grid grid-cols-1 md:grid-cols-4 justify-center mt-10 items-center text-white'>
                             <div className='mx-5'>
                                 <h3 className='text-2xl'>
                                     Modul SNB
@@ -206,7 +206,7 @@ const Modul = () => {
                                 <div className='h-24 text-5xl flex w-full justify-center items-end'>
                                     <h3>All Modul</h3>
                                 </div>
-                                <div className='grid grid-cols-2 my-8'>
+                                <div className='grid grid-cols-1 md:grid-cols-2 my-8'>
                                 {dataModul2.map((data, index) => {
                                     return (
                                         <div className='mx-5 my-2 flex items-center gap-2 font-black bg-black p-2 rounded-lg' key={index}>

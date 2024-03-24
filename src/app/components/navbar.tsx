@@ -47,7 +47,7 @@ const Navbarsection = () => {
   const { setTheme } = useTheme();
   const dispatch = useAppDispatch();
   const users = useAppSelector((state) => state.users);
-  console.log("data navbar", users);
+  // console.log("data navbar", users);
 
   const handleLogout = () => {
     localStorage.removeItem("token");
@@ -57,7 +57,7 @@ const Navbarsection = () => {
   useEffect(() => {
     const token = localStorage.getItem("token");
 
-    console.log(token);
+    // console.log(token);
 
     const keepLogin = async () => {
       try {
