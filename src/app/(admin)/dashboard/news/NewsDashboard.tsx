@@ -1,13 +1,6 @@
 "use client"
+import { baseUrl } from "@/app/utils/databases";
 import { Button } from "@/components/ui/button";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
 import {
   Table,
   TableBody,
@@ -18,13 +11,13 @@ import {
 } from "@/components/ui/table";
 import useNews from "@/hooks/getNews";
 import { BoxIcon } from "@radix-ui/react-icons";
+import axios from "axios";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import { Toaster } from "react-hot-toast";
-import ButtonNews from "./component/buttonDelete";
 import ButtonDelete from "./component/buttonDelete";
 import ButtonEdit from "./component/buttonEdit";
-import { INews } from "@/types/news";
-import { FaUser } from "react-icons/fa6";
+import Image from "next/image";
 
 interface INewsDelete {
   newsId: number;
@@ -34,6 +27,31 @@ interface INewsDelete {
 
 const NewsDashboard = () => {
   const news = useNews();
+
+  const [reloadNews, setReloadNews] = useState([]);
+
+  const getNews = async () => {
+    try {
+      const response = await axios.get(`${baseUrl}/news`);
+      setReloadNews(response.data.data);
+      console.log(response.data.data);
+      
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  useEffect(() => {
+    getNews();
+  }, []);
+
+  const refreshNews = async () => {
+    getNews()
+  }
+
+
+  
+
 
 
 
@@ -79,6 +97,20 @@ const NewsDashboard = () => {
                     <TableCell className="font-medium md:w-[250px]">
                       {data.title}
                     </TableCell>
+
+                    <TableCell className="">
+                    <Image
+                        alt="Avatar"
+                        className="rounded-full"
+                        height="32"
+                        src="/icon/app.png"
+                        style={{
+                          aspectRatio: "32/32",
+                          objectFit: "cover",
+                        }}
+                        width="32"
+                      />
+                    </TableCell>
                     <TableCell>
                      
                       
@@ -86,9 +118,9 @@ const NewsDashboard = () => {
                     {/* <TableCell>{data.category}</TableCell> */}
                     <TableCell className="text-right">
                       <div className="my-2">
-                        <ButtonEdit data={data} />
+                        <ButtonEdit data={data} getReloadNews={getNews} />
                       </div>
-                      <ButtonDelete data={data} />
+                      <ButtonDelete data={data} getReloadNews={refreshNews} />
                     </TableCell>
                   </TableRow>
                 </TableBody>

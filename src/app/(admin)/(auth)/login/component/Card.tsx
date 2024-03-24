@@ -17,6 +17,7 @@ import { loginAction } from '@/lib/features/userSlice'
 import { useAppDispatch, useAppSelector } from '@/lib/hooks'
 import axios, { AxiosError } from 'axios'
 import { useFormik } from 'formik'
+import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import toast, { Toaster } from 'react-hot-toast'
 import * as yup from 'yup'
@@ -104,7 +105,7 @@ const CardLogin = () => {
           <div className="grid gap-2 my-2">
             <Label htmlFor="password">Password</Label>
             <Input id="password" type="password"
-              placeholder="Enter Your Name"
+              placeholder="Enter Your Password"
               required
               name="password"
               onChange={formik.handleChange}
@@ -124,9 +125,11 @@ const CardLogin = () => {
         <p className="mt-2 text-xs text-center text-gray-700">
           {" "}
           Don't have an account?{" "}
+          <Link href={'/register'}>
           <span className=" text-blue-600 hover:underline">
             Sign up
           </span>
+          </Link>
         </p>
       </CardFooter>
     </Card>

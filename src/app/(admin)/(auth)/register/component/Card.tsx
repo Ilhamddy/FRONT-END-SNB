@@ -143,7 +143,7 @@ const CardRegister = () => {
           <div className="grid gap-2 my-2">
             <Label htmlFor="password">Password</Label>
             <Input id="password" type="password"
-              placeholder="Enter the title"
+              placeholder="Enter the Password"
               required
               name="password"
               onChange={formik.handleChange}
@@ -171,9 +171,9 @@ const CardRegister = () => {
       <CardFooter className="flex flex-col">
         <p className="mt-2 text-center text-xs text-gray-700">
           {" "}
-          Do have an account?{" "}
+          Do have account?{" "}
           <Link href={"/login"}>
-            <span className=" text-blue-600 hover:underline">Sign up</span>
+            <span className=" text-blue-600 hover:underline">Sign In</span>
           </Link>
         </p>
       </CardFooter>

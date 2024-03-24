@@ -28,13 +28,6 @@ const About = () => {
                                 <h1><span className='text-third'>Dengan berbagai layanan yang disediakan, </span>PT Solusi Nusantara Berdikari bertujuan untuk menjadi mitra terpercaya</h1>
                             </div>
                         </div>
-
-
-
-
-
-
-
                         <div className='flex flex-col justify-center mx-2 md:px-5'>
                             <div className='text-justify my-5'>
                                 <h5>Kami berdedikasi untuk merevolusi industri perawatan kesehatan. Platform kami dirancang untuk merampingkan operasi rumah sakit, meningkatkan perawatan pasien, dan mengoptimalkan efisiensi secara keseluruhan di dalam institusi perawatan kesehatan.</h5>
@@ -52,7 +45,7 @@ const About = () => {
                         {dataProduct.map((data) => {
                             return (
                                 <Card className=' p-5 bg-transparent bg-gray-100 transition-all duration-200' key={data.value}>
-                                    <div className='text-6xl'>{data.value}</div>
+                                    <div className='text-4xl'>{data.value}</div>
                                     <div className='font-thin text-justify my-5'><span className='font-black'> </span> {data.title}</div>
                                 </Card>
                             )

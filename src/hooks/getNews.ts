@@ -5,12 +5,15 @@ import { baseUrl } from "@/app/utils/databases";
 
 const useNews = () => {
   const [news, setNews] = useState<INews[]>([]);
+  console.log(news);
+  
 
   const getNews = async () => {
     try {
       const response = await axios.get(`${baseUrl}/news`);
       setNews(response.data.data);
       console.log(response.data.data);
+      
     } catch (error) {
       console.log(error);
     }

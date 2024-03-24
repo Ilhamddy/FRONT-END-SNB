@@ -31,7 +31,7 @@ const Services = () => {
                             <div className='text-justify my-5'>
                                 <h5>Komitmen kami terhadap pengembangan solusi IT yang terdepan dalam industri kesehatan merupakan inti dari identitas kami. Dengan keahlian yang luas dan pengalaman yang mendalam, kami mampu menyajikan solusi yang efektif dan efisien bagi lembaga kesehatan dan organisasi terkait.</h5>
                             </div>
-                            <div className='flex flex-row gap-5 my-5'>
+                            <div className='grid place-content-center md:flex flex-row gap-5 my-5'>
                                 <Link href={'#detail'}>
                                     <Button className='h-16 w-[200px] sm:text-sm  md:text-md gap-5 bg-based1'><FaEject /> Tentang kami</Button>
                                 </Link>

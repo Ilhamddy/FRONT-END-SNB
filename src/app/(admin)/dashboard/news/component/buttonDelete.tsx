@@ -19,14 +19,19 @@ import {
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog";
 
-const ButtonDelete = ({ data }: { data: INews }) => {
+interface ButtonEditProps {
+  data: INews;
+  getReloadNews:() => void; // Add this line
+}
+
+const ButtonDelete = ({ data, getReloadNews }: ButtonEditProps ) => {
   const [deleteNews, setDeleteNews] = useState(false);
 
   const handleDelete = async (newsId: number) => {
     try {
       await axios.delete(`${baseUrl}/news/delete/${newsId}`);
       toast.success("delete Data Succes ");
-      useNews();
+      getReloadNews()
     } catch (error) {
       if (error instanceof AxiosError) {
         const errorMsg = error.response?.data || error.message;

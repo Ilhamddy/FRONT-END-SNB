@@ -168,10 +168,11 @@ const Navbarsection = () => {
                                         </Button>
                                       </DropdownMenuTrigger>
                                       <DropdownMenuContent align="end">
-                                        <DropdownMenuLabel>My Account</DropdownMenuLabel>
+                        <Link href={'/dashboard'}>
+                        <DropdownMenuLabel>My Account</DropdownMenuLabel>
+                        </Link>
                                         <DropdownMenuSeparator />
-                                        <DropdownMenuItem>Settings</DropdownMenuItem>
-                                        <DropdownMenuItem>Support</DropdownMenuItem>
+                                     
                                         <DropdownMenuSeparator />
                                         <DropdownMenuItem onClick={handleLogout}>Logout</DropdownMenuItem>
                                       </DropdownMenuContent>
@@ -330,10 +331,12 @@ const Navbarsection = () => {
                                         </Button>
                                       </DropdownMenuTrigger>
                                       <DropdownMenuContent align="end">
-                                        <DropdownMenuLabel>My Account</DropdownMenuLabel>
-                                        <DropdownMenuSeparator />
-                                        <DropdownMenuItem>Settings</DropdownMenuItem>
-                                        <DropdownMenuItem>Support</DropdownMenuItem>
+                        <Link href={'/dashboard'}>
+                        <DropdownMenuLabel>Dashboard</DropdownMenuLabel>
+                        
+                        </Link>
+                        <DropdownMenuSeparator />
+                                        
                                         <DropdownMenuSeparator />
                                         <DropdownMenuItem onClick={handleLogout}>Logout</DropdownMenuItem>
                                       </DropdownMenuContent>

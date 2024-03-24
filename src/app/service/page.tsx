@@ -1,13 +1,11 @@
 'use client'
-import Services from './component/Services'
-import Team from './component/Team'
+import AOS from "aos"
+import "aos/dist/aos.css"
+import { useEffect } from 'react'
+import Contactall from '../components/contactall'
 import Core from './component/Core'
 import Question from './component/Question'
-import Contactall from '../components/contactall'
-import Detail from './component/Detail'
-import AOS from "aos";
-import "aos/dist/aos.css";
-import React, { useEffect } from 'react'
+import Services from './component/Services'
 const page = () => {
     useEffect(() => {
         AOS.init(

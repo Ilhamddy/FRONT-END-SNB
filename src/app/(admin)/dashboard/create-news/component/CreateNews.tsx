@@ -54,6 +54,8 @@ const CreateNews = () => {
 
   const handleImageChange = (event : any) => {
     setImage(event.target.files[0]); // Update the image state with the selected file
+    console.log(event.target.files[0]);
+    
   };
 
   //   useEffect(() => {

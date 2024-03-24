@@ -19,9 +19,12 @@ import { FaEdit } from "react-icons/fa";
 import { Textarea } from "@/components/ui/textarea";
 import { useFormik } from "formik";
 
+interface ButtonEditProps {
+  data: INews;
+  getReloadNews:() => void; // Add this line
+}
 
-
-const ButtonEdit = ({ data }: { data: INews }) => {
+const ButtonEdit = ({ data, getReloadNews}: ButtonEditProps) => {
 
   const formik = useFormik({
     initialValues: {
@@ -34,8 +37,9 @@ const ButtonEdit = ({ data }: { data: INews }) => {
           title: values.title,
           description: values.description,
         });
-        // refreshNews();
         toast.success("Update News Successfully");
+        getReloadNews();
+
       } catch (error) {
         if (error instanceof AxiosError) {
           const errorMsg = error.response?.data || error.message;
