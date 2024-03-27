@@ -21,14 +21,13 @@ import { FaImage } from "react-icons/fa6";
 const CreateNews = () => {
 
   const router = useRouter();
-  const [image, setImage] = useState(null); 
+  const [image, setImage] = useState<File | null>(null);
   const formik = useFormik({
     initialValues: {
       title: "",
       description: "",
-      image : "",
     },
-    onSubmit: async (values, image: any) => {
+    onSubmit: async (values, image: any)  => {
       try {
 
         const formData = new FormData(); // Create FormData object
@@ -52,12 +51,12 @@ const CreateNews = () => {
     },
   });
 
-  const handleImageChange = (event : any) => {
-    setImage(event.target.files[0]); // Update the image state with the selected file
-    console.log(event.target.files[0]);
-    
+  const handleImageChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    if (event.target.files && event.target.files.length > 0) {
+      setImage(event.target.files[0]); // Update the image state with the selected file
+      console.log(event.target.files[0]);
+    }
   };
-
   //   useEffect(() => {
   //     createPostNews();
   //   }, []);
@@ -128,8 +127,9 @@ const CreateNews = () => {
           >  Choose
             <Input accept="image/*" className="sr-only" id="picture" type="file"  name="image" 
                     onChange={handleImageChange}
-                    onBlur={formik.handleBlur}
-                    value={formik.values.image}/>
+                    // onBlur={formik.handleBlur}
+                    //     value={formik.values.image}
+                      />
           </Label>
           <div>Can't find the right file? Make sure it's a .jpg, .jpeg, or .png and not larger than 1MB.</div>
         </div>

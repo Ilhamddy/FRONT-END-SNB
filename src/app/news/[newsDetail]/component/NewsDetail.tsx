@@ -4,6 +4,7 @@
 import useGetNewsById from "@/hooks/getNewsByid";
 import { baseImage } from "@/app/utils/databases";
 import Image from "next/image";
+import { format } from "date-fns";
 
   interface INews {
     id: number,
@@ -16,7 +17,7 @@ import Image from "next/image";
 const NewsDetail = () => {
  
     const getNewsById: any = useGetNewsById();
-    console.log(getNewsById.image);
+    console.log(getNewsById);
     
 
 
@@ -27,16 +28,17 @@ const NewsDetail = () => {
                     <div className="my-10 grid grid-cols-1 gap-5 text-center sm:grid-cols-1 md:mx-10 md:grid-cols-1">
                         <div>
                             <Image
-                                className="my-5 h-64 w-full rounded-xl sm:h-[500px] md:my-0 md:h-[550px]"
+                                className="my-5 h-64 w-full rounded-xl sm:h-[500px] md:my-0 md:h-[750px]"
                                 height={500}
                                 width={500}
+                                quality={100}
                                 alt="Kemenkes SNB"
                                 src={`${baseImage}/news/${getNewsById.image}`}
                             /> 
                         </div>
 
                         <div className="flex flex-col justify-center">
-                            <h1 className="my-5 text-justify text-gray-500 text-2xl">
+                            <h1 className="my-5 text-justify text-gray-500 text-6xl">
                                 {getNewsById.title} {/* Access title property from getNewsById */}
                             </h1>
                             <h1 className="my-5 text-justify text-black">
@@ -45,7 +47,8 @@ const NewsDetail = () => {
 
                         </div>
                         <p className="text-end">
-                            {getNewsById.createdAt}
+                      {getNewsById.createdAt}
+
                         </p>
                     </div>
 

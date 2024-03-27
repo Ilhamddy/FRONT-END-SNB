@@ -7,17 +7,16 @@ import { HiCloudDownload } from 'react-icons/hi'
 
 const Contact = () => {
     return (
-        <section className='bg-zinc-900'>
+        <section className='bg-based1'>
             <div className='h-full bg-cover md:mx-10 sm:mx-10  py-10'>
-                <div className='md:mx-10 sm:mx-10 '>
-
-                    <div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 md:py-10 '>
-                        <div className="p-5">
+                <div className='md:mx-10 sm:mx-10'>
+                    <div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 md:py-10 bg-third rounded-xl'>
+                        <div className="p-5  rounded-xl">
                             <div className="mx-auto max-w-screen-xl md:px-4 py-8 lg:py-16 text-white">
-                                <h2 className="tracking-tighttext-white mb-4 text-center text-4xl font-extrabold  uppercase ">
+                                <h2 className="tracking-tighttext-white mb-4 text-center text-dope text-4xl font-extrabold  uppercase ">
                                     Contact Us
                                 </h2>
-                                <p className="mb-8 text-justify md:text-center font-light  lg:mb-16 text-sm">
+                                <p className="mb-8 text-justify md:text-center font-light text-dope lg:mb-16 ">
                                     PT SNB menyambut baik pertanyaan, umpan balik, dan saran Anda. Sebagai penyedia terkemuka di industri kami, kami berkomitmen untuk memberikan layanan dan dukungan terbaik kepada Anda. Jika Anda memiliki pertanyaan tentang layanan kami, membutuhkan bantuan, atau ingin terhubung dengan tim kami, kami siap membantu Anda. Silakan isi formulir di bawah ini, dan salah satu perwakilan kami akan menghubungi Anda sesegera mungkin. Kami tunggu kabar dari Anda!
                                 </p>
                                 <div className="grid grid-cols-1 md:grid-cols-3 ">
@@ -112,7 +111,7 @@ const Contact = () => {
                                             </div>
                                         </form>
                                     </Card>
-                                    <div className=" p-5">
+                                    <div className=" p-5 text-dope">
                                         <div className=" mb-2 block space-y-8 text-2xl font-medium ">
                                             Points of contact
                                         </div>

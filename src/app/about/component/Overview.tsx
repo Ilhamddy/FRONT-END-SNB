@@ -31,13 +31,13 @@ const Overview = () => {
                             <div className='my-5 py-5 rounded-lg'>
                                 <Accordion type="single" collapsible className="w-full p-5 bg-based  rounded-lg">
                                     <AccordionItem value="item-1">
-                                        <AccordionTrigger >Vision PT. Solusi Nusantara Berdikari</AccordionTrigger>
+                                        <AccordionTrigger >Visi PT. Solusi Nusantara Berdikari</AccordionTrigger>
                                         <AccordionContent className='bg-third p-5 rounded-lg'>
                                             Visi PT Solusi Nusantara Berdikari adalah menjadi mitra tepercaya dan kekuatan pendorong dalam mengubah lanskap layanan kesehatan melalui teknologi, inovasi, dan keunggulan.
                                         </AccordionContent>
                                     </AccordionItem>
                                     <AccordionItem value="item-2">
-                                        <AccordionTrigger>Mision PT. Solusi Nusantara Berdikari</AccordionTrigger>
+                                        <AccordionTrigger>Misi PT. Solusi Nusantara Berdikari</AccordionTrigger>
 
                                         <AccordionContent className='bg-third p-5 rounded-lg'>
                                             Misi PT Solusi Nusantara Berdikari adalah merevolusi industri perawatan kesehatan dengan menawarkan solusi mutakhir yang meningkatkan perawatan pasien, merampingkan operasi, dan meningkatkan efisiensi secara keseluruhan di institusi perawatan kesehatan.

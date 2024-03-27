@@ -111,10 +111,6 @@ const Navbarsection = () => {
     setIsTheme(isTheme);
   }, [navbar]);
 
-
-    
-    
-    
   return (
     //navbar
     <header className="fixed  top-0 w-full" style={navbarStyle}>
@@ -242,13 +238,10 @@ const Navbarsection = () => {
                                     >
                                       <FaBrain className="h-6 w-6 text-based1" />
                                       <div className="mb-2 mt-4 text-lg font-medium">
-                                        All Product
+                                        Semua Produk
                                       </div>
                                       <div className="text-justify text-xs leading-tight text-muted-foreground">
-                                        Healthcare Application offers robust
-                                        tools for resource management, allowing
-                                        hospitals to optimize their resources
-                                        efficiently.
+                                      Aplikasi Kesehatan menawarkan alat yang kuat untuk manajemen sumber daya, yang memungkinkan rumah sakit mengoptimalkan sumber daya mereka secara efisien.
                                       </div>
                                     </a>
                                   </NavigationMenuLink>
